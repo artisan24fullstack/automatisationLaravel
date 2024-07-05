@@ -18,8 +18,10 @@
 >  npm i concurrently -g 
 
 (update scripts package json) 
- "start": "concurrently  \"php artisan config:cache\" \"php artisan serve\" \"npm run dev \"  "
 
+```
+        "start": "concurrently  \"php artisan config:cache\" \"php artisan serve\" \"npm run dev \"  "
+```
 ## Installation (Livewire)
 
 [livewire](https://livewire.laravel.com/docs/quickstart)
