@@ -37,11 +37,16 @@
 
 ## Installation Filament 
 
+[Filament](https://filamentphp.com/docs/3.x/panels/installation)
+
+[Demo Filament](https://demo.filamentphp.com/login)
+
 > composer require filament/filament:"^3.0"
 
 > php artisan filament:install --panels
 
 > php artisan migrate
+
 ```
    WARN  The SQLite database does not exist:\database\database.sqlite.
 
@@ -63,6 +68,8 @@
   2024_07_05_082624_create_category_post_table ............................................................................................ 5ms DONE
 ```
 
+## Create a user (admin)
+
 > php artisan make:filament-user
 ```
  Name:
@@ -73,6 +80,7 @@
 ```
 
 > php artisan make:filament-resource Category
+
 ```
    INFO  Successfully created CategoryResource!
 ```
@@ -82,11 +90,13 @@
 ```
    INFO  Successfully created PostResource!
 ```
+
 > php artisan make:filament-resource User --generate
 
 ```   
    INFO  Successfully created UserResource!
 ```
+
 > php artisan vendor:publish --tag=filament-config
 
 ```
